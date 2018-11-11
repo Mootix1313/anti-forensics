@@ -10,7 +10,7 @@
 # usage: picsoritdidnthappen ~/pictures/Lulz
 # -----------------------------------------------------------
 
-wordlist="/usr/share/dict/american-english-insane"
+wordlist="/home/cfrs510/wordlist/rockyou.txt"
 
 # -----------------------------------------------------------
 # select a random word from $wordlist to use as passphrase

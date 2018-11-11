@@ -9,7 +9,7 @@
 # usage: durrhurr ~/umadbro/ 9001
 # -----------------------------------------------------------
 
-wordlist="/usr/share/dict/american-english-insane"
+wordlist="/home/cfrs510/wordlist/rockyou.txt"
 
 # -----------------------------------------------------------
 # generate a file of random size with random bytes

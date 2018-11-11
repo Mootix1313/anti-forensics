@@ -7,7 +7,7 @@
 # -----------------------------------------------------------
 # configure as you please
 # -----------------------------------------------------------
-wordlist="/usr/share/dict/american-english-insane"
+wordlist="/home/cfrs510/wordlist/rockyou.txt"
 archive_prefix="truecrypt_vol"
 database="myvolume.tc"
 keyfile="DONOTLOSE.key"
