@@ -84,8 +84,8 @@ main () {
 # -----------------------------------------------------------
 # check for command-line arguments
 # -----------------------------------------------------------
-if [[ -z "${1}" || -z "${2}" ]]; then
-    echo "Usage: $0 <directory> <iterations>"
+if [[ -z "${1}" ]]; then
+    echo "Usage: $0 <directory>"
     exit 9001
 fi
 
