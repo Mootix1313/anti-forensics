@@ -42,7 +42,7 @@ do_a_stego () {
     gfilesize=$(($hfilesize / 8))
     gfilesize=$(($RANDOM % $gfilesize))
     ((++filesize))
-    dd if=/dev/urandom of="${guestfile}" bs="${filesize}" count=1 status=noxfer conv=noerror,notruc 2> /dev/null
+    dd if=/dev/urandom of="${guestfile}" bs="${filesize}" count=1 status=noxfer conv=noerror,notrunc 2> /dev/null
 
     # -----------------------------------------------------------
     # decide format and compress/encrypt accordingly
@@ -56,7 +56,7 @@ do_a_stego () {
             ;;
         1)
             tempfile="${guestfile}.rar"
-            rar a -o+ -hp"${random_pass}" "${tempfile}" "${guestfile}" &> /dev/null 
+            rar a -o+ -hp"${random_pass}" "${tempfile}" "${guestfile}" &> /dev/null
             ;;
         2)
             tempfile="${guestfile}.7z"
