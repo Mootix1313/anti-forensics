@@ -29,7 +29,7 @@ do_a_file () {
     case "${extension}" in
         0)
             # by default creates output file with .gpg extension
-            gpg -q --yes --passphrase "${random_pass}" -c "${filename}" &> /dev/null 
+            gpg -q --yes --batch --no-tty --passphrase "${random_pass}" -c "${filename}" &> /dev/null 
             ;;
         1)
             tempfile="${filename}.rar"
